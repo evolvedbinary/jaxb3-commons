@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jvnet.jaxb2_commons.plugin.fluent_api;
+package org.jvnet.jaxb3_commons.plugin.fluent_api;
 
 import java.util.Collection;
 import java.util.List;

@@ -13,16 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.jvnet.jaxb2_commons.plugin.fluent_api;
+package org.jvnet.jaxb3_commons.plugin.fluent_api;
 
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.FLUENT_COLLECTION_SETTER;
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.FLUENT_LIST_SETTER;
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.FLUENT_SETTER;
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.GETTER_METHOD_PREFIX;
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.GETTER_METHOD_PREFIX_LEN;
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.PARAMETERIZED_LIST_PREFIX;
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.SETTER_METHOD_PREFIX;
-import static org.jvnet.jaxb2_commons.plugin.fluent_api.FluentMethodType.SETTER_METHOD_PREFIX_LEN;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.FLUENT_COLLECTION_SETTER;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.FLUENT_LIST_SETTER;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.FLUENT_SETTER;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.GETTER_METHOD_PREFIX;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.GETTER_METHOD_PREFIX_LEN;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.PARAMETERIZED_LIST_PREFIX;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.SETTER_METHOD_PREFIX;
+import static org.jvnet.jaxb3_commons.plugin.fluent_api.FluentMethodType.SETTER_METHOD_PREFIX_LEN;
 
 import java.util.ArrayList;
 import java.util.Collection;
