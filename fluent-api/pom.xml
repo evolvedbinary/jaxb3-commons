@@ -8,11 +8,11 @@
 
 	<name>JAXB3 Commons - Fluent API Plugin</name>
 
-	<url>https://github.com/evolvedbinary/jaxb3-fluent-api</url>
+	<url>https://github.com/evolvedbinary/jaxb3-commons</url>
 
 	<description>
 		Causes JAXB RI 3 XJC to generate additional methods that allows method chaining.
-		Method chaining is useful when building object tree in memory, allowing the code 
+		Method chaining is useful when building object tree in memory, allowing the code
 		to be done in a concise way. The code that uses this plugin can still run with any
 		JAXB3 implementation.
 	</description>
@@ -22,7 +22,7 @@
 		<artifactId>oss-parent</artifactId>
 		<version>9</version>
 	</parent>
-  
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -47,25 +47,37 @@
 	</contributors>
 
 	<scm>
-		<connection>scm:git:https://github.com/evolvedbinary/jaxb3-fluent-api.git/tags/jaxb3-fluent-api-3.0.2</connection>
-		<developerConnection>scm:git:https://github.com/evolvedbinary/jaxb3-fluent-api.git/tags/jaxb3-fluent-api-3.0.2</developerConnection>
-		<url>https://github.com/evolvedbinary/jaxb3-fluent-api/tags/jaxb3-fluent-api-3.0.2</url>
+		<connection>scm:git:https://github.com/evolvedbinary/jaxb3-commons.git</connection>
+		<developerConnection>scm:git:https://github.com/evolvedbinary/jaxb3-commons.git</developerConnection>
+		<url>https://github.com/evolvedbinary/jaxb3-commons.git</url>
 	</scm>
 
 	<dependencies>
-		<dependency>  
+		<dependency>
 			<groupId>org.glassfish.jaxb</groupId>
 			<artifactId>jaxb-xjc</artifactId>
 			<version>3.0.2</version>
 			<scope>provided</scope>
-		</dependency>  
+		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>
 				<plugin>
-					<inherited>true</inherited>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-source-plugin</artifactId>
+					<version>3.3.0</version>
+					<executions>
+						<execution>
+							<id>attach-source</id>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<version>3.11.0</version>
@@ -76,21 +88,6 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-				<version>3.3.0</version>
-				<executions>
-					<execution>
-						<id>attach-source</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
 	</build>
 
 </project>

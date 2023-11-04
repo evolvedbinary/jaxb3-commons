@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.evolvedbinary.thirdparty.org.jvnet.jaxb3_commons</groupId>
+	<artifactId>jaxb3-commons</artifactId>
+	<packaging>pom</packaging>
+
+	<version>3.0.2-SNAPSHOT</version>
+
+	<name>JAXB3 Commons - Fluent API Plugin</name>
+
+	<url>https://github.com/evolvedbinary/jaxb3-commons</url>
+
+	<description>JAXB 3 commons</description>
+
+	<parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>9</version>
+	</parent>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:git:https://github.com/evolvedbinary/jaxb3-commons.git</connection>
+		<developerConnection>scm:git:https://github.com/evolvedbinary/jaxb3-commons.git</developerConnection>
+		<url>https://github.com/evolvedbinary/jaxb3-commons.git</url>
+	</scm>
+
+        <modules>
+            <module>fluent-api</module>
+        </modules>
+</project>
