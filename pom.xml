@@ -4,7 +4,7 @@
 	<artifactId>jaxb3-commons</artifactId>
 	<packaging>pom</packaging>
 
-	<version>3.0.2</version>
+	<version>3.0.3-SNAPSHOT</version>
 
 	<name>JAXB3 Commons - Fluent API Plugin</name>
 
