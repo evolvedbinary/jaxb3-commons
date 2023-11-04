@@ -38,17 +38,29 @@ public class FluentMethodInfo {
 		this.isOverride = isOverride;
 	}
 	
-	/** Creates a fluent API method in the given class. */ 
+	/**
+	 * Creates a fluent API method in the given class.
+	 *
+	 * @param implClass the implementation class.
+	 */
 	public void createFluentMethod(JDefinedClass implClass) {
 		fluentMethodType.createFluentMethod(implClass, this);
 	}
 
-	/** Returns true if the fluent API method is one overriding a parent method. */
+	/**
+	 * Determine if this is an override.
+	 *
+	 * @return true if the fluent API method is one overriding a parent method.
+	 */
 	public boolean isOverride() {
 		return isOverride;
 	}
 
-	/** Returns the original method for which a fluent API method will be generated. */
+	/**
+	 * Get the original method.
+	 *
+	 * @return the original method for which a fluent API method will be generated.
+	 */
 	public JMethod getJmethod() {
 		return jmethod;
 	}
