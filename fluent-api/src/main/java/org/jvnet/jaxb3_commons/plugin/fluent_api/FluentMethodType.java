@@ -40,6 +40,9 @@ public enum FluentMethodType {
 	     * Adds a fluent api method, which invokes the given setter method, to the given class.
 	     * This applies to both simple property setter method and 
 	     * indexed property setter method.
+		 *
+		 * @param implClass the implementation class.
+		 * @param fluentMethodInfo the method information.
 	     */
 	    @Override
         public void createFluentMethod(JDefinedClass implClass, FluentMethodInfo fluentMethodInfo)
@@ -74,6 +77,9 @@ public enum FluentMethodType {
 	{
 	    /**
 	     * Create a fluent setter method for List, with support of variable arguments.
+		 *
+		 * @param implClass the implementation class.
+		 * @param fluentMethodInfo the method information.
 	     */
 	    @Override
         public void createFluentMethod(JDefinedClass implClass, FluentMethodInfo fluentMethodInfo)
@@ -120,6 +126,9 @@ public enum FluentMethodType {
         // https://jaxb2-commons.dev.java.net/issues/show_bug.cgi?id=12
 	    /**
 	     * Create a fluent setter method for List, with support of a java.util.Collection argument.
+		 *
+		 * @param implClass the implementation class.
+		 * @param fluentMethodInfo the method information.
 	     */
 	    @Override
         public void createFluentMethod(JDefinedClass implClass, FluentMethodInfo fluentMethodInfo)
